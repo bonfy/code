@@ -1,0 +1,11 @@
+language: python
+
+services: mongodb
+
+python:
+  - "3.5"
+# command to install dependencies
+install: "pip install -r req.txt"
+# command to run tests
+script:
+  - python3 -m pytest
